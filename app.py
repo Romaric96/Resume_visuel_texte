@@ -6,13 +6,8 @@ import plotly.express as px  # interactive charts
 import streamlit as st  # 🎈 data web app development
 
 import matplotlib.pyplot as plt
-from nltk.corpus import stopwords
-try:
-    stop = set(stopwords.words('french'))
-except LookupError:
-    import nltk
-    nltk.download('stopwords')
-    stop = set(stopwords.words('french'))
+from spacy.lang.fr.stop_words import STOP_WORDS
+stop = set(STOP_WORDS)
 
 st.set_page_config(
     page_title="ISJ-MSII-DS",
