@@ -5,7 +5,7 @@ import pandas as pd  # read csv, df manipulation
 import plotly.express as px  # interactive charts
 import streamlit as st  # 🎈 data web app development
 
-import matplotlib.pyplot as plt
+#from  matplotlib import pyplot as plt
 from spacy.lang.fr.stop_words import STOP_WORDS
 stop = set(STOP_WORDS)
 
